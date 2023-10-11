@@ -1,6 +1,6 @@
 # Paleo-Planner
 
-Paleo Planner is a web-based tool that helps you plan your meals based on the Paleo diet, specifically designed for OMAD (One-Meal-a-Day) enthusiasts. It generates a meal suggestion tailored to your individual goals and preferences. Whether you're looking to lose weight, maintain a healthy lifestyle, or just try something new, Paleo Planner can provide you with a daily meal idea. The app
+Paleo Planner is a web-based tool that helps you plan your meals based on the Paleo diet, specifically designed for OMAD (One-Meal-a-Day) enthusiasts. It generates a meal suggestion tailored to your individual goals and preferences. Whether you're looking to lose weight, maintain a healthy lifestyle, or just try something new, Paleo Planner can provide you with a daily meal idea. The app can currently generate **1680** different possible meal combinations.
 
 # How It Works
 
