@@ -198,6 +198,8 @@ body {
     margin-left: 20px !important;
     background-color: rgb(249, 162, 162, .8);
     color: #3B312B;
+    text-align: center;
+    justify-content: center;
   }
   
   
