@@ -34,7 +34,11 @@ body {
     text-transform: uppercase;
     letter-spacing: .2em;
   }
-  
+
+  a {
+    text-decoration: none;
+  }
+
   p {
     color: rgb(246, 248, 248, 1);
     font: 500 1.5em 'Raleway', sans-serif;
