@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paleo Planner</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container-after" class="container">
+      <div class="meal-label">
+        <h2 id="meal-generated-label"></h2>
+        <div class="meal-info">
+          <p id="meal-generated-label-info-1"></p>
+          <p id="meal-generated-label-info-2"></p>
+          <p id="meal-generated-label-info-3"></p>
+        </div>
+        <h2 id="meal-generated-label-5"></h2>
+      </div>
+      <div class="meal-info-buttons">
+        <button id="regenerate-button">Regenerate</button>
+        <a href="http://127.0.0.1:8080/"
+          ><button class="home-button">Start Over</button></a
+        >
+      </div>
+    </div>
+
+    <div id="container" class="container">
+      <div class="header">
+        <h1>The Paleo Planner</h1>
+        <h2>A Paleo OMAD (One-Meal-a-Day) Meal Generator</h2>
+      </div>
+
+      <div class="radio-group">
+        <label>Are you male or female?</label>
+        <input type="radio" class="radio-button" name="gender" value="male" />
+        Male
+        <input type="radio" class="radio-button" name="gender" value="female" />
+        Female
+      </div>
+
+      <div class="form-group">
+        <label for="age">How old are you?</label>
+        <input type="number" class="form-input" id="age" min="18" />
+      </div>
+
+      <div class="form-group">
+        <label for="height">How tall are you?</label>
+        <input
+          class="height-input"
+          type="number"
+          class="form-input"
+          id="height-feet"
+          min="3"
+          max="8"
+          placeholder="ft"
+        />
+        <input
+          class="height-input"
+          type="number"
+          class="form-input"
+          id="height-inch"
+          min="0"
+          max="11"
+          placeholder="in"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="current-weight">What's your current weight?</label>
+        <input
+          type="number"
+          class="form-input"
+          id="current-weight"
+          min="100"
+          max="600"
+          placeholder="lbs"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="goal-weight">What's your goal weight?</label>
+        <input
+          type="number"
+          class="form-input"
+          id="goal-weight"
+          min="100"
+          max="600"
+          placeholder="lbs"
+        />
+      </div>
+      <div class="form-group">
+        <label for="weeks">How many weeks to hit your goal?</label>
+        <input type="number" class="form-input" id="weeks" min="8" max="52" />
+      </div>
+
+      <!-- How active? -->
+      <div class="form-group">
+        <label class="active" for="activity-level">How active are you?</label>
+        <label class="small-label" for="activity-level">1</label>
+
+        <input
+          type="range"
+          class="form-input active-input"
+          id="activity-level"
+          min="1"
+          max="5"
+          placeholder="1= not active, 5= very active"
+          width="1000"
+        />
+        <label class="small-label" for="activity-level">5</label>
+      </div>
+
+      <button class="submit-button">Generate Meal</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="foods.js"></script>
+  </body>
+</html>
